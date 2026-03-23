@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   FaReact,
   FaGitAlt,
@@ -18,11 +17,8 @@ import HeroSection from "../components/HeroSection";
 import StatsSection from "../components/StatsSection";
 import ProfessionalExperience from "../components/ProfessionalExperience";
 import TechnicalExpertise from "../components/TechnicalExpertise";
-import CTASection from "../components/CTASection";
 
 const Home = () => {
-  const [isHovered, setIsHovered] = useState<string | null>(null);
-
   const skills = [
     { name: "HTML5", icon: <FaReact style={{ color: "#E34F26" }} /> },
     { name: "CSS3", icon: <SiTypescript style={{ color: "#1572B6" }} /> },
@@ -92,23 +88,6 @@ const Home = () => {
       ],
       projects: ["LDGERS", "Maya SVM", "HRMS", "iBASEt"],
     }
-  ];
-
-  const featuredProjects = [
-    {
-      title: "LDGERS",
-      description:
-        "Scalable financial operations platform for enterprise restaurant management systems.",
-      tech: ["React", "TypeScript", "Redux", "Material UI"],
-      link: "/projects",
-    },
-    {
-      title: "Maya SVM",
-      description:
-        "Healthcare application used by Auxiliary Nurse Midwives for rural health surveys.",
-      tech: ["React", "ApexCharts", "REST APIs"],
-      link: "/projects",
-    },
   ];
 
   return (

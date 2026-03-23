@@ -70,8 +70,6 @@ const Projects = () => {
     [],
   );
 
-  const categories = ["All", "Web", "Mobile", "Full Stack"];
-
   const filteredProjects = useMemo(() => {
     return projectsData.filter((project) => {
       const matchesSearch =

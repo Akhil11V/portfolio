@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FaRocket, FaFileAlt } from "react-icons/fa";
+import { FaRocket } from "react-icons/fa";
 import { GoDot } from "react-icons/go";
 
 interface Experience {
@@ -15,12 +14,6 @@ interface Experience {
   projects: string[];
 }
 
-interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  link: string;
-}
 
 interface ProfessionalExperienceProps {
   professionalExperience: Experience[];

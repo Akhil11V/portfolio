@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
-import { SiAngular, SiIonic, SiReact, SiRedux } from "react-icons/si";
+import { SiReact, SiRedux } from "react-icons/si";
 import { GoDot } from "react-icons/go";
 
 interface Stat {
