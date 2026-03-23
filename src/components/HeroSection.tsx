@@ -75,8 +75,11 @@ const HeroSection = forwardRef<HTMLDivElement, HeroSectionProps>(
           </div>
           <div className="flex-col md:col-span-4 items-center justify-center hidden md:block">
             <div className="w-48 h-48 relative flex items-center justify-center mx-auto mb-8">
-              <img src="/profile.jpeg" alt="Akhil Verma" className="w-full h-full object-cover rounded-full shadow-2xl relative overflow-hidden ring-4 ring-offset-4 ring-(--accent) dark:ring-offset-(--bg-primary)" />
-            </div>
+              <img
+                src={`${import.meta.env.BASE_URL}profile.jpeg`}
+                alt="Akhil Verma"
+                className="w-full h-full object-cover rounded-full shadow-2xl relative overflow-hidden ring-4 ring-offset-4 ring-(--accent) dark:ring-offset-(--bg-primary)"
+              />  </div>
           </div>
         </div>
 

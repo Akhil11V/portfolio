@@ -223,7 +223,7 @@ const About = () => {
           </div>
           <div className="flex gap-4 justify-center flex-wrap">
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Akhil_Verma_Resume.pdf"
               className="inline-flex items-center gap-2 bg-linear-to-r from-(--accent) to-(--primary-color) text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:-translate-y-1 shadow-lg hover:shadow-xl"
             >
