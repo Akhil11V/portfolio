@@ -1,0 +1,49 @@
+/* Minimal CSS for Tailwind-only portfolio */
+/* Most styles are now handled by Tailwind utilities */
+
+/* Custom animations */
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 3s ease-in-out infinite;
+}
+
+/* Mobile menu styles for responsive navigation */
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+  
+  .nav-menu.mobile-open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+    max-width: 400px;
+    background: var(--bg-card);
+    flex-direction: column;
+    padding: 6rem 2rem 2rem;
+    gap: 1rem;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-menu:not(.mobile-open) {
+    transform: translateX(100%);
+  }
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
