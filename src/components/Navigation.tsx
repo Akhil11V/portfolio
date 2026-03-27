@@ -9,6 +9,7 @@ import {
   FaSun,
   FaMoon,
   FaTimes,
+  FaDownload,
 } from "react-icons/fa";
 
 const Navigation = () => {
@@ -126,7 +127,7 @@ const Navigation = () => {
   return (
     <>
       <nav
-        className={`flex justify-between items-center p-4 sm:p-6 lg:p-8 border-b border-(--border) bg-(--bg) sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-md bg-opacity-80 shadow-lg" : "backdrop-blur-none"}`}
+        className={`flex justify-between items-center py-2 px-4 sm:px-6 lg:px-8 border-b border-(--border) bg-(--bg) sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "backdrop-blur-md bg-opacity-80 shadow-lg" : "backdrop-blur-none"}`}
       >
         <div className="flex justify-between items-center w-full max-w-281.5 mx-auto">
           <div className="flex items-center">
@@ -139,10 +140,10 @@ const Navigation = () => {
                 💻
               </span>
               <span className="font-bold bg-linear-to-r from-gray-800 to-purple-600 bg-clip-text text-transparent hidden sm:inline">
-                Akhil Verma
+                Burle Vineeth
               </span>
               <span className="font-bold bg-linear-to-r from-gray-800 to-purple-600 bg-clip-text text-transparent sm:hidden">
-                AV
+                BV
               </span>
             </Link>
           </div>
@@ -207,6 +208,19 @@ const Navigation = () => {
                 </Link>
               </li>
             ))}
+            <li className="relative">
+              <a
+                href="resume.pdf"
+                download="resume.pdf"
+                className="flex items-center gap-2 text-white bg-linear-to-r from-(--accent) to-(--primary-color) no-underline font-medium p-2 sm:p-3 px-3 sm:px-5 rounded-xl transition-all duration-300 relative overflow-hidden hover:-translate-y-0.5 hover:shadow-lg"
+                title="Download your resume"
+              >
+                <span className="text-[1.2rem] transition-transform duration-300">
+                  <FaDownload style={{ color: "white" }} />
+                </span>
+                <span className="font-semibold hidden md:inline">Resume</span>
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -221,7 +235,7 @@ const Navigation = () => {
             <div className="flex items-center gap-2">
               <span className="text-[1.8rem]">💻</span>
               <span className="font-bold bg-linear-to-r from-purple-700 to-blue-700 bg-clip-text text-transparent">
-                Akhil Verma
+                Burle Vineeth
               </span>
             </div>
             <button
@@ -282,8 +296,8 @@ const Navigation = () => {
           {/* Sidebar Footer */}
           <div className="p-4 border-t border-(--border) bg-(--bg-secondary)">
             <div className="text-center text-(--text-secondary) text-sm font-medium">
-              <p>© 2024 Akhil Verma</p>
-              <p className="mt-1 text-(--accent)">Senior Frontend Engineer</p>
+              <p>© 2024 Burle Vineeth</p>
+              <p className="mt-1 text-(--accent)">Frontend Engineer</p>
             </div>
           </div>
         </div>
