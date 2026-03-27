@@ -140,10 +140,10 @@ const Navigation = () => {
                 💻
               </span>
               <span className="font-bold bg-linear-to-r from-gray-800 to-purple-600 bg-clip-text text-transparent hidden sm:inline">
-                Burle Vineeth
+                Akhil Verma
               </span>
               <span className="font-bold bg-linear-to-r from-gray-800 to-purple-600 bg-clip-text text-transparent sm:hidden">
-                BV
+                AV
               </span>
             </Link>
           </div>
@@ -171,24 +171,6 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <ul className="hidden sm:flex list-none m-0 p-0 gap-2 items-center">
-            <li className="relative">
-              <button
-                className="flex items-center gap-2 text-(--text) bg-none border-none p-2 sm:p-3 px-3 sm:px-5 rounded-xl cursor-pointer font-medium transition-all duration-300 relative overflow-hidden hover:text-(--text-h) hover:bg-(--social-bg) hover:-translate-y-0.5 hover:shadow-lg"
-                onClick={toggleDarkMode}
-                aria-label="Toggle dark mode"
-              >
-                <span className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-180">
-                  {isDarkMode ? (
-                    <FaSun style={{ color: "#F59E0B" }} />
-                  ) : (
-                    <FaMoon style={{ color: "#6366F1" }} />
-                  )}
-                </span>
-                <span className="font-semibold hidden lg:inline">
-                  {isDarkMode ? "Light" : "Dark"}
-                </span>
-              </button>
-            </li>
             {navItems.map((item, index) => (
               <li
                 key={item.path}
@@ -220,6 +202,24 @@ const Navigation = () => {
                 </span>
                 <span className="font-semibold hidden md:inline">Resume</span>
               </a>
+            </li>
+            <li className="relative">
+              <button
+                className="flex items-center gap-2 text-(--text) bg-none border-none p-2 sm:p-3 px-3 sm:px-5 rounded-xl cursor-pointer font-medium transition-all duration-300 relative overflow-hidden hover:text-(--text-h) hover:bg-(--social-bg) hover:-translate-y-0.5 hover:shadow-lg"
+                onClick={toggleDarkMode}
+                aria-label="Toggle dark mode"
+              >
+                <span className="text-[1.2rem] transition-transform duration-300 group-hover:scale-125 group-hover:rotate-180">
+                  {isDarkMode ? (
+                    <FaSun style={{ color: "#F59E0B" }} />
+                  ) : (
+                    <FaMoon style={{ color: "#6366F1" }} />
+                  )}
+                </span>
+                <span className="font-semibold hidden lg:inline">
+                  {isDarkMode ? "Light" : "Dark"}
+                </span>
+              </button>
             </li>
           </ul>
         </div>
