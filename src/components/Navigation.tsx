@@ -210,8 +210,8 @@ const Navigation = () => {
             ))}
             <li className="relative">
               <a
-                href="resume.pdf"
-                download="resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                download="Akhil_Verma_Resume.pdf"
                 className="flex items-center gap-2 text-white bg-linear-to-r from-(--accent) to-(--primary-color) no-underline font-medium p-2 sm:p-3 px-3 sm:px-5 rounded-xl transition-all duration-300 relative overflow-hidden hover:-translate-y-0.5 hover:shadow-lg"
                 title="Download your resume"
               >
